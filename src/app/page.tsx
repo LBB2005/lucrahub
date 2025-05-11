@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link'
 
 const techArticles = [
@@ -26,7 +27,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex justify-center items-start py-8">
-      <div className="w-full max-w-5xl bg-white rounded-2xl shadow-sm p-8">
+      {/* TEST BANNER */}
+      <div className="fixed top-0 left-0 w-full bg-green-500 text-white text-center py-2 z-50 font-bold">This is a test update!</div>
+      <div className="w-full max-w-5xl bg-white rounded-2xl shadow-sm p-8 mt-8">
         {/* Sticky Header */}
         <header className="sticky top-0 z-20 bg-white rounded-t-2xl flex justify-between items-center px-2 py-4 mb-8 border-b border-gray-100">
           <span className="text-2xl font-extrabold tracking-tight">LUCRA</span>
